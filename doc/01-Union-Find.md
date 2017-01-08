@@ -15,7 +15,7 @@
 ----------------------------------------------------------------
 
 ## Solutions 
-## Quick-Find [eager approach]
+## Quick-Find [eager approach]  => O(n ^ 2)
 ![](media/14838602886285.jpg)
 
 **Java implementation** [source code](../java/src/main/java/com/linbo/algs/datatypes/QuickFindUF.java)
@@ -27,7 +27,7 @@
 **Quadratic algorithms do not scale !!!**
 ![](media/14838607543772.jpg)
 
-## Quick-Union [Lazy approach]
+## Quick-Union [Lazy approach] => O(N)
 ![](media/14838650996257.jpg)
 
 **Java implementation** [source code](../java/src/main/java/com/linbo/algs/datatypes/QuickUnionUF.java)
@@ -35,4 +35,21 @@
 
 **Quick-union is also too slow**
 ![](media/14838671401867.jpg)
+
+## Improvements
+### weighting quick-union => O(lg(n))
+Always put smaller tree lower
+![](media/14838677996908.jpg)
+
+**Quick-union and weighted quick-union example**
+![](media/14838680485004.jpg)
+
+**Java implementation** [source code](../java/src/main/java/com/linbo/algs/datatypes/QuickUnionUF.java)
+![](media/14838680922712.jpg)
+
+**Weighted quick-union analysis**
+![](media/14838696953334.jpg)
+![](media/14838697146110.jpg)
+![](media/14838697836573.jpg)
+
 
