@@ -18,16 +18,6 @@ public class WeightedQuickUnionUF {
     }
   }
 
-  public int count() { return count; }
-
-  // validate that p is a valid index
-  private void validate(int p) {
-    int n = parent.length;
-    if (p < 0 || p >= n) {
-      throw new IndexOutOfBoundsException("index " + p + " is not between 0 and " + (n-1));
-    }
-  }
-
   /*
    * Returns the component identifier for the component containing site p
    * Same as the root of p
@@ -65,6 +55,16 @@ public class WeightedQuickUnionUF {
     count--;
   }
 
+  public int count() { return count; }
+
+  // validate that p is a valid index
+  private void validate(int p) {
+    int n = parent.length;
+    if (p < 0 || p >= n) {
+      throw new IndexOutOfBoundsException("index " + p + " is not between 0 and " + (n-1));
+    }
+  }
+
 
   public static void main(String args[]) {
 
@@ -80,7 +80,6 @@ public class WeightedQuickUnionUF {
 
     uf.union(5,0);
     uf.union(7,2);
-    uf.union(6,1);
     uf.union(6,1);
     uf.union(1,0);
     System.out.println(uf.connected(0,7));

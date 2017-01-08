@@ -36,6 +36,8 @@
 **Quick-union is also too slow**
 ![](media/14838671401867.jpg)
 
+----------------------------------------------------------------
+
 ## Improvements
 ### weighting quick-union => O(lg(n))
 Always put smaller tree lower
@@ -51,5 +53,19 @@ Always put smaller tree lower
 ![](media/14838696953334.jpg)
 ![](media/14838697146110.jpg)
 ![](media/14838697836573.jpg)
+
+### path compression => O(lg(n))
+![](media/14838720393272.jpg)
+![](media/14838720689227.jpg)
+![](media/14838720823989.jpg)
+
+**Java implementation** [source code](../java/src/main/java/com/linbo/algs/datatypes/UF.java)
+![](media/14838721151299.jpg)
+
+----------------------------------------------------------------
+
+## Summary
+![](media/14838862736507.jpg)
+
 
 

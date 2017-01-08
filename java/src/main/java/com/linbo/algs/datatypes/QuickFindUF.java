@@ -15,16 +15,6 @@ public class QuickFindUF {
     }
   }
 
-  public int count() { return count; }
-
-  // validate that p is a valid index
-  private void validate(int p) {
-    int n = id.length;
-    if (p < 0 || p >= n) {
-      throw new IndexOutOfBoundsException("index " + p + " is not between 0 and " + (n-1));
-    }
-  }
-
   public int find(int p) {
     validate(p);
     return id[p];
@@ -57,6 +47,16 @@ public class QuickFindUF {
     count--;
   }
 
+  public int count() { return count; }
+
+  // validate that p is a valid index
+  private void validate(int p) {
+    int n = id.length;
+    if (p < 0 || p >= n) {
+      throw new IndexOutOfBoundsException("index " + p + " is not between 0 and " + (n-1));
+    }
+  }
+
 
   public static void main(String args[]) {
 
@@ -72,7 +72,6 @@ public class QuickFindUF {
 
     uf.union(5,0);
     uf.union(7,2);
-    uf.union(6,1);
     uf.union(6,1);
     uf.union(1,0);
     System.out.println(uf.connected(0,7));

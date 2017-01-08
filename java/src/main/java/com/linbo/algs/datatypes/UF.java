@@ -2,16 +2,20 @@ package com.linbo.algs.datatypes;
 
 /**
  * Created by @linbojin on 8/1/17.
+ * This implementation uses weighted quick union by rank with path compression
  */
-public class QuickUnionUF {
+public class UF {
   private int[] parent;
+  private int[] rank;     // rank[i] = rank of subtree rooted at i (never more than 31)
   private int count;
 
-  public QuickUnionUF(int n) {
+  public UF(int n) {
     count = n;
     parent = new int[n];
+    rank = new int[n];
     for (int i = 0; i < n; i++) {
       parent[i] = i;
+      rank[i] = 0;
     }
   }
 
@@ -24,6 +28,7 @@ public class QuickUnionUF {
     // chase parent pointers until reach root
     // depth of i array accesses
     while(p != parent[p]) {
+      parent[p] = parent[parent[p]];    // path compression by halving
       p = parent[p];
     }
     return p;
@@ -40,7 +45,14 @@ public class QuickUnionUF {
     int rootP = find(p);
     int rootQ = find(q);
     if (rootP == rootQ) return;
-    parent[rootP] = rootQ;
+
+    // make root of smaller rank point to root of larger rank
+    if      (rank[rootP] < rank[rootQ]) parent[rootP] = rootQ;
+    else if (rank[rootP] > rank[rootQ]) parent[rootQ] = rootP;
+    else {
+      parent[rootQ] = rootP;
+      rank[rootP]++;
+    }
     count--;
   }
 
@@ -57,7 +69,7 @@ public class QuickUnionUF {
 
   public static void main(String args[]) {
 
-    QuickUnionUF uf = new QuickUnionUF(10);
+    UF uf = new UF(10);
     uf.union(4, 3);
     uf.union(3, 8);
     uf.union(6, 5);
@@ -75,3 +87,4 @@ public class QuickUnionUF {
     System.out.println(uf.count() + " components");
   }
 }
+
