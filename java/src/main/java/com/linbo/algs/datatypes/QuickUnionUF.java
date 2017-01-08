@@ -3,15 +3,15 @@ package com.linbo.algs.datatypes;
 /**
  * Created by @linbojin on 8/1/17.
  */
-public class QuickFindUF {
-  private int[] id;    // id[i] = component identifier of i
-  private int count;   // number of components
+public class QuickUnionUF {
+  private int[] parent;
+  private int count;
 
-  public QuickFindUF(int n) {
+  public QuickUnionUF(int n) {
     count = n;
-    id = new int[n];
+    parent = new int[n];
     for (int i = 0; i < n; i++) {
-      id[i] = i;
+      parent[i] = i;
     }
   }
 
@@ -19,48 +19,45 @@ public class QuickFindUF {
 
   // validate that p is a valid index
   private void validate(int p) {
-    int n = id.length;
+    int n = parent.length;
     if (p < 0 || p >= n) {
       throw new IndexOutOfBoundsException("index " + p + " is not between 0 and " + (n-1));
     }
   }
 
-  public int find(int p) {
-    validate(p);
-    return id[p];
-  }
-
-  // 2 array accesses
-  public boolean connected(int p, int q) {
-    validate(p);
-    validate(q);
-    return id[p] == id[q];
-  }
-
   /*
-   * To merge components containing p and q, change all entries whose id equals id[p] to id[q].
-   * at most 2N + 2 array accesses
+   * Returns the component identifier for the component containing site p
+   * Same as the root of p
    */
-  public void union(int p, int q) {
+  private int find(int p) {
     validate(p);
-    validate(q);
-    int pID = id[p];   // needed for correctness!
-    int qID = id[q];   // to reduce the number of array accesses
-
-    // p and q are already in the same component
-    if (pID == qID) return;
-
-    for (int i = 0; i < id.length; i++) {
-      // change all entries with id[p] to id[q]
-      if (id[i] == pID) id[i] = qID;
+    // chase parent pointers until reach root
+    // depth of i array accesses
+    while(p != parent[p]) {
+      p = parent[p];
     }
+    return p;
+  }
+
+  // depth of p and q array accesses
+  public boolean connected(int p, int q) {
+    return find(p) == find(q);
+  }
+
+  // change root of p to point to root of q
+  // depth of p and q array accesses
+  public void union(int p, int q) {
+    int rootP = find(p);
+    int rootQ = find(q);
+    if (rootP == rootQ) return;
+    parent[rootP] = rootQ;
     count--;
   }
 
 
   public static void main(String args[]) {
 
-    QuickFindUF uf = new QuickFindUF(10);
+    QuickUnionUF uf = new QuickUnionUF(10);
     uf.union(4, 3);
     uf.union(3, 8);
     uf.union(6, 5);
