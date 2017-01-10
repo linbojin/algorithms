@@ -27,7 +27,7 @@ public class UF {
     validate(p);
     // chase parent pointers until reach root
     // depth of i array accesses
-    while(p != parent[p]) {
+    while (p != parent[p]) {
       parent[p] = parent[parent[p]];    // path compression by halving
       p = parent[p];
     }
@@ -47,7 +47,7 @@ public class UF {
     if (rootP == rootQ) return;
 
     // make root of smaller rank point to root of larger rank
-    if      (rank[rootP] < rank[rootQ]) parent[rootP] = rootQ;
+    if (rank[rootP] < rank[rootQ]) parent[rootP] = rootQ;
     else if (rank[rootP] > rank[rootQ]) parent[rootQ] = rootP;
     else {
       parent[rootQ] = rootP;
@@ -56,13 +56,15 @@ public class UF {
     count--;
   }
 
-  public int count() { return count; }
+  public int count() {
+    return count;
+  }
 
   // validate that p is a valid index
   private void validate(int p) {
     int n = parent.length;
     if (p < 0 || p >= n) {
-      throw new IndexOutOfBoundsException("index " + p + " is not between 0 and " + (n-1));
+      throw new IndexOutOfBoundsException("index " + p + " is not between 0 and " + (n - 1));
     }
   }
 
@@ -79,11 +81,11 @@ public class UF {
     System.out.println(uf.connected(8, 9));
     System.out.println(uf.count() + " components");
 
-    uf.union(5,0);
-    uf.union(7,2);
-    uf.union(6,1);
-    uf.union(1,0);
-    System.out.println(uf.connected(0,7));
+    uf.union(5, 0);
+    uf.union(7, 2);
+    uf.union(6, 1);
+    uf.union(1, 0);
+    System.out.println(uf.connected(0, 7));
     System.out.println(uf.count() + " components");
   }
 }

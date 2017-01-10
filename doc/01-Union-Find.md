@@ -67,5 +67,26 @@ Always put smaller tree lower
 ## Summary
 ![](media/14838862736507.jpg)
 
+----------------------------------------------------------------
+
+## Use case
+### Percolation
+Assignment: http://coursera.cs.princeton.edu/algs4/assignments/percolation.html
+Solution: [Percolation.java](../java/src/main/java/com/linbo/algs/examples/Percolation.java) and [PercolationStats.java](../java/src/main/java/com/linbo/algs/examples/PercolationStats.java) 
+![](media/14840067575596.jpg)
+
+**Likelihood of percolation**
+![](media/14840068253244.jpg)
+![](media/14840068401453.jpg)
+
+**Monte Carlo simulation**
+![](media/14840068656604.jpg)
+
+**Dynamic connectivity solution to estimate percolation threshold**
+![](media/14840069248061.jpg)
+![](media/14840069360891.jpg)
+![](media/14840069572019.jpg)
+![](media/14840069898141.jpg)
+
 
 

@@ -22,7 +22,7 @@ public class WeightedQuickUnionUF {
    * Returns the component identifier for the component containing site p
    * Same as the root of p
    */
-  private int find(int p) {
+  public int find(int p) {
     validate(p);
     // chase parent pointers until reach root
     // depth of i array accesses
