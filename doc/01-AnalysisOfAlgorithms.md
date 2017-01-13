@@ -18,20 +18,20 @@
 **3-SUM: brute-force algorithm**
 ![](media/14842886126125.jpg)
 
-**Measuring the running time**
+**Measuring the running time**<br>
 ![](media/14842886265579.jpg)
 
-**Empirical analysis**
+**Empirical analysis**<br>
 ![](media/14842886865380.jpg)
 
-**Data analysis**
+**Data analysis**<br>
 ![](media/14842887137954.jpg)
 ![](media/14842887314195.jpg)
 
-**Prediction and validation**
+**Prediction and validation**<br>
 ![](media/14842888053900.jpg)
 
-**Doubling hypothesis**
+**Doubling hypothesis**<br>
 ![](media/14842888489532.jpg)
 ![](media/14842889581360.jpg)
 
@@ -44,18 +44,18 @@
 **Mathematical models for running time**
 ![](media/14842892000648.jpg)
 
-**2-Sum**
+**2-Sum**<br>
 ![](media/14842899369789.jpg)
 
 
-**Cost model**
+**Cost model**<br>
 ![](media/14842896131894.jpg)
 
-**Tilde notation**
+**Tilde notation**<br>
 ![](media/14842900355208.jpg)
 ![](media/14842900726256.jpg)
 
-**Example**
+**Example**<br>
 ![](media/14842901477729.jpg)
 ![](media/14842901794390.jpg)
 
@@ -76,24 +76,24 @@
 ### Binary search demo
 ![](media/14842908000219.jpg)
 
-**Java implementation**
+**Java implementation**<br>
 ![](media/14842908839249.jpg)
 
-**mathematical analysis**
+**Mathematical Analysis**<br>
 ![](media/14842909264147.jpg)
 
 **An N2 log N algorithm for 3-SUM**
 ![](media/14842910361406.jpg)
 
-**Comparing programs**
+**Comparing programs**<br>
 ![](media/14842913669843.jpg)
 
 ## Theory of algorithms
-**Types of analyses**
+**Types of analyses**<br>
 ![](media/14842915391352.jpg)
 ![](media/14842915643542.jpg)
 
-**Theory of algorithms**
+**Theory of algorithms**<br>
 ![](media/14842916247841.jpg)
 
 **Commonly-used notations in the theory of algorithms**
@@ -112,7 +112,7 @@
 ![](media/14842924834495.jpg)
 
 ## Memory
-**Basics**
+**Basics**<br>
 ![](media/14842925535290.jpg)
 
 **Typical memory usage for primitive types and arrays**
@@ -125,7 +125,7 @@
 **Typical memory usage summary**
 ![](media/14842927587550.jpg)
 
-**Example**
+**Example**<br>
 ![](media/14842928362329.jpg)
 
 ## Turning the crank: summary

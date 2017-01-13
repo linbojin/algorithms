@@ -8,7 +8,7 @@ Steps to develop a usable algorithm:* Model the problem.* Find an algorithm t
 ---------------------------------------------
 
 ### Notes
-1. [Analytics of algorithms](01-AnalysisOfAlgorithms.md)
+1. [Analytics of algorithms](01-AnalysisOfAlgorithms.md)
 2. [Union−Find](02-Union-Find.md)
 
 
