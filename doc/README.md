@@ -1,11 +1,14 @@
-Learning Algorithms
-
-Steps to developing a usable algorithm.* Model the problem.* Find an algorithm to solve it. 
+# Learning Algorithms
+Steps to develop a usable algorithm:* Model the problem.* Find an algorithm to solve it. 
 * Fast enough? Fits in memory?
 * If not, figure out why.
-* Find a way to address the problem. ・Iterate until satisfied.The scientific method.
-Mathematical analysis.
+* Find a way to address the problem. 
+* Iterate until satisfied.
 
-1. Union−Find
+---------------------------------------------
+
+### Notes
+1. [Analytics of algorithms](01-AnalysisOfAlgorithms.md)
+2. [Union−Find](02-Union-Find.md)
 
 
