@@ -42,11 +42,50 @@
 **Stack: resizing-array implementation trace**<br>
 ![](media/14843861014944.jpg)
 
-**Stack resizing-array implementation: performance**<br>![](media/14843861738486.jpg)
+[**Stack resizing-array implementation: performance**](https://github.com/linbojin/algorithms/blob/master/doc/01-AnalysisOfAlgorithms.md#amortized-cost-analysis)<br>![](media/14843861738486.jpg)
 
 **Stack resizing-array implementation: memory usage**<br>
 ![](media/14843862454944.jpg)
 
 ### Stack implementations: resizing array vs. linked list
 ![](media/14843863971332.jpg)
+
+-----------------------------------------------------------------------
+
+## Queue
+![](media/14843886141066.jpg)
+
+### Queue: linked-list representation
+![](media/14843886374419.jpg)
+
+**Queue dequeue: linked-list implementation**<br>
+![](media/14843886843623.jpg)
+
+**Queue enqueue: linked-list implementation**<br>
+![](media/14843888528365.jpg)
+
+**Queue: linked-list implementation in Java**<br>
+![](media/14843888935976.jpg)
+
+### Queue: resizing array implementation
+![](media/14843889277495.jpg)
+
+
+## Generics
+**Generic stack: linked-list implementation**<br>
+![](media/14843895129263.jpg)
+
+## Iterators
+![](media/14843895606237.jpg)
+![](media/14843895787667.jpg)
+
+**Stack iterator: linked-list implementation**<br>
+![](media/14843896591073.jpg)
+
+**Stack iterator: array implementation**<br>
+![](media/14843896839812.jpg)
+
+## Bag
+![](media/14844058531156.jpg)
+
 
