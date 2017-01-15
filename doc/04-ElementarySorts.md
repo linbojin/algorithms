@@ -56,10 +56,10 @@
 **mathematical analysis**<br>
 ![](media/14844885839371.jpg)
 
-**best and worst case**
+**best and worst case**<br>
 ![](media/14844887406613.jpg)
 
-**partially-sorted arrays**
+**partially-sorted arrays**<br>
 ![](media/14844887728821.jpg)
 
 
