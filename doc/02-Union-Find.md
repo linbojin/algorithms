@@ -1,4 +1,20 @@
 # Union-Find
+Table of Contents
+=================
+
+   * [Union-Find](#union-find)
+      * [Problem: Dynamic connectivity](#problem-dynamic-connectivity)
+      * [Model the problem.](#model-the-problem)
+      * [Solutions](#solutions)
+      * [Quick-Find [eager approach]  =&gt; O(n ^ 2)](#quick-find-eager-approach---on--2)
+      * [Quick-Union [Lazy approach] =&gt; O(N)](#quick-union-lazy-approach--on)
+      * [Improvements](#improvements)
+         * [weighting quick-union =&gt; O(lg(n))](#weighting-quick-union--olgn)
+         * [path compression =&gt; O(lg(n))](#path-compression--olgn)
+      * [Summary](#summary)
+      * [Use case](#use-case)
+         * [Percolation](#percolation)
+
 ## Problem: Dynamic connectivity
 ![](media/14838598936355.jpg)
 

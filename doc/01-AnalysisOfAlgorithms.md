@@ -1,4 +1,18 @@
 # Analytics of algorithms
+Table of Contents
+=================
+
+   * [Analytics of algorithms](#analytics-of-algorithms)
+      * [Introduction](#introduction)
+      * [Observations](#observations)
+      * [Mathematical Models](#mathematical-models)
+      * [order-of-growth classifications](#order-of-growth-classifications)
+         * [Binary search demo](#binary-search-demo)
+      * [Theory of algorithms](#theory-of-algorithms)
+      * [Memory](#memory)
+      * [Turning the crank: summary](#turning-the-crank-summary)
+      * [Amortized Cost Analysis](#amortized-cost-analysis)
+
 ## Introduction
 **Reasons to analyze algorithms**
 ![](media/14842875277142.jpg)

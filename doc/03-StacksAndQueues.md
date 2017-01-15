@@ -1,4 +1,24 @@
 # Stacks And Queues
+Table of Contents
+=================
+
+   * [Stacks And Queues](#stacks-and-queues)
+      * [Stack](#stack)
+         * [linked-list representation](#linked-list-representation)
+         * [Stack: array implementation](#stack-array-implementation)
+         * [Stack: resizing-array implementation](#stack-resizing-array-implementation)
+         * [Stack implementations: resizing array vs. linked list](#stack-implementations-resizing-array-vs-linked-list)
+      * [Queue](#queue)
+         * [Queue: linked-list representation](#queue-linked-list-representation)
+         * [Queue: resizing array implementation](#queue-resizing-array-implementation)
+      * [Generics](#generics)
+      * [Iterators](#iterators)
+      * [Bag](#bag)
+      * [Stack applications: Arithmetic expression evaluation](#stack-applications-arithmetic-expression-evaluation)
+      * [Deques and Randomized Queues](#deques-and-randomized-queues)
+         * [Reservoir sampling](#reservoir-sampling)
+        
+
 ![](media/14842969313073.jpg)
 ![](media/14842987471795.jpg)
 
