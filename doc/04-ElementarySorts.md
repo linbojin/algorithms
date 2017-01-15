@@ -22,7 +22,8 @@
 ------------------------------------------------------------------
 
 ## Selection sort
-![](selection-sort_c041bf.gif)
+![](media/selection-sort.gif)<br>
+[Selection.java](../java/src/main/java/com/linbo/algs/sortings/Selection.java)<br>
 ![](media/14844862244139.jpg)
 ![](media/14844862446488.jpg)
 
