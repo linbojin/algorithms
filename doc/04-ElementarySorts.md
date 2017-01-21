@@ -90,12 +90,27 @@
 **Shellsort: visual trace**<br>
 ![](media/14849799441075.jpg)
 
-**Shellsort: analysis**
+**Shellsort: analysis**<br>
 ![](media/14849802729252.jpg)
 
 **Why are we interested in shellsort?**<br>
 ![](media/14849803671303.jpg)
 
+------------------------------------------------------------------------
 
+## Applications
+### shuffling
+**How to shuffle an array**<br>
+![](media/14849817416576.jpg)
+
+**Shuffle sort**<br>
+![](media/14849819655604.jpg)
+
+**Knuth shuffle**<br>
+![](media/14849820334525.jpg)<br>
+![](media/14849820778089.jpg)
+
+**War story (online poker)**<br>
+![](media/14849822072619.jpg)
 
 
