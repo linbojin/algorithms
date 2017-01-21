@@ -100,7 +100,7 @@
 
 ## Applications
 ### shuffling
-[Shuffling.java](../java/src/main/java/com/linbo/algs/examples/Shuffling.java)<br>
+[KnuthShuffle.java](../java/src/main/java/com/linbo/algs/examples/KnuthShuffle.java)<br>
 **How to shuffle an array**<br>
 ![](media/14849817416576.jpg)
 
@@ -113,5 +113,41 @@
 
 **War story (online poker)**<br>
 ![](media/14849822072619.jpg)
+
+### Convex hull
+[GrahamScan.java](../java/src/main/java/com/linbo/algs/examples/GrahamScan.java)<br>
+![](media/14849846246174.jpg)
+
+**Convex hull: mechanical algorithm**<br>
+![](media/14849848277260.jpg)
+
+**Convex hull application: motion planning**<br>
+![](media/14849849643436.jpg)
+
+**Convex hull application: farthest pair**<br>
+![](media/14849849823308.jpg)
+
+**Convex hull: geometric properties**<br>
+![](media/14849857571047.jpg)
+
+**Graham scan demo**<br>
+![](media/14849858020260.jpg)<br>
+![](media/14849858585613.jpg)<br>
+![](media/14849858848177.jpg)<br>
+![](media/14849859036194.jpg)<br>
+![](media/14849859751116.jpg)<br>
+
+**Graham scan: implementation challenges**<br>
+![](media/14849859339690.jpg)
+
+**When we have a good sorting algorithm, it gives us a good convex hull algorithm. Because the most work in convex hull is the sort.**
+
+**Implementing ccw**<br>
+![](media/14849874561497.jpg)
+![](media/14849874806956.jpg)
+
+**Immutable point data type**
+![](media/14849874998139.jpg)
+
 
 

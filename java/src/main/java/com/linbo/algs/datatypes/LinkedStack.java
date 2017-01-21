@@ -44,6 +44,11 @@ public class LinkedStack<Item> implements Iterable<Item> {
     size++;
   }
 
+  public Item peek() {
+    if (isEmpty()) throw new java.util.NoSuchElementException("Stack underflow");
+    return first.item;
+  }
+
   // remove and return the string most recently added
   public Item pop() {
     if (isEmpty()) throw new java.util.NoSuchElementException("Stack underflow");
