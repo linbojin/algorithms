@@ -1,4 +1,15 @@
 # Elementary Sorts
+Table of Contents
+=================
+
+   * [Elementary Sorts](#elementary-sorts)
+      * [Sorting problem](#sorting-problem)
+      * [Selection sort](#selection-sort)
+      * [Insertion sort](#insertion-sort)
+      * [Shell sort](#shell-sort)
+      * [Applications](#applications)
+         * [shuffling](#shuffling)
+         * [Convex hull](#convex-hull)
 
 ## Sorting problem
 ![](media/14844859206056.jpg)
@@ -146,7 +157,7 @@
 ![](media/14849874561497.jpg)
 ![](media/14849874806956.jpg)
 
-**Immutable point data type**
+**Immutable point data type**<br>
 ![](media/14849874998139.jpg)
 
 

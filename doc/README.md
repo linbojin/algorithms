@@ -10,5 +10,7 @@ Steps to develop a usable algorithm:* Model the problem.* Find an algorithm t
 ### Notes
 1. [Analytics of algorithms](01-AnalysisOfAlgorithms.md)
 2. [Union−Find](02-Union-Find.md)
+3. [Stacks And Queues](03-StacksAndQueues.md)
+4. [Elementary Sorts](04-ElementarySorts.md)
 
 
