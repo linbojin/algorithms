@@ -100,6 +100,7 @@
 
 ## Applications
 ### shuffling
+[Shuffling.java](../java/src/main/java/com/linbo/algs/examples/Shuffling.java)<br>
 **How to shuffle an array**<br>
 ![](media/14849817416576.jpg)
 
