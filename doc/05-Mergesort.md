@@ -53,4 +53,68 @@
 ![](media/14850791044082.jpg)
 ![](media/14850791171463.jpg)
 
+-------------------------------------------------
+
+## Sorting complexity
+![](media/14850877677714.jpg)
+
+**Decision tree (for 3 distinct items a, b, and c)**<br>
+![](media/14850878126803.jpg)
+
+### Compare-based lower bound for sorting
+![](media/14850878659507.jpg)<br>
+![](media/14850879257391.jpg)
+
+**Complexity of sorting**<br>
+![](media/14850880826753.jpg)
+
+### Complexity results in context
+![](media/14850881697747.jpg)
+![](media/14850882009653.jpg)
+
+------------------------------------------
+
+## comparators
+![](media/14850882704041.jpg)
+
+### Comparator interface
+![](media/14850883337561.jpg)
+
+**Comparator interface: system sort**<br>
+![](media/14850883636008.jpg)
+
+**Comparator interface: using with our sorting libraries**<br>
+![](media/14850884402720.jpg)
+
+### Comparator interface: implementing
+![](media/14850885019583.jpg)<br>
+![](media/14850885368548.jpg)
+
+### Polar order
+[Point2D.java](../java/src/main/java/com/linbo/algs/examples/Point2D.java)<br>
+![](media/14850885749219.jpg)
+![](media/14850886126537.jpg)
+
+**Comparator interface: polar order**<br>
+![](media/14850886998861.jpg)
+
+-------------------------------------------------------------------
+
+## stability
+![](media/14850889186043.jpg)<br>
+![](media/14850889370242.jpg)
+
+### Stability: insertion sort
+![](media/14850889806760.jpg)
+
+### Stability: selection sort
+![](media/14850890120375.jpg)
+
+### Stability: shellsort
+![](media/14850890323187.jpg)
+
+### Stability: mergesort
+![](media/14850890960545.jpg)<br>
+![](media/14850891192667.jpg)
+
 
