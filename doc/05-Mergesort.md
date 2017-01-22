@@ -4,6 +4,7 @@
 ![](media/14849910002972.jpg)
 
 ## Mergesort
+[Merge.java](../java/src/main/java/com/linbo/algs/sortings/Merge.java)<br>
 ![](media/14849910371420.jpg)
 
 **Abstract in-place merge**<br>
@@ -48,6 +49,7 @@
 -------------------------------------------------
 
 ## Bottom-up mergesort
+[MergeBU.java](../java/src/main/java/com/linbo/algs/sortings/MergeBU.java)<br>
 ![](media/14850791044082.jpg)
 ![](media/14850791171463.jpg)
 
