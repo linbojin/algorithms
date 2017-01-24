@@ -1,5 +1,30 @@
 # Mergesort
+Table of Contents
+=================
 
+   * [Mergesort](#mergesort)
+      * [Two classic sorting algorithms](#two-classic-sorting-algorithms)
+      * [Mergesort](#mergesort-1)
+         * [Trace and Animation](#trace-and-animation)
+         * [Empirical analysis](#empirical-analysis)
+         * [Mergesort: number of compares and array accesses](#mergesort-number-of-compares-and-array-accesses)
+         * [Mergesort analysis: memory](#mergesort-analysis-memory)
+         * [Practical improvements](#practical-improvements)
+         * [visualization](#visualization)
+      * [Bottom-up mergesort](#bottom-up-mergesort)
+      * [Sorting complexity](#sorting-complexity)
+         * [Compare-based lower bound for sorting](#compare-based-lower-bound-for-sorting)
+         * [Complexity results in context](#complexity-results-in-context)
+      * [comparators](#comparators)
+         * [Comparator interface](#comparator-interface)
+         * [Comparator interface: implementing](#comparator-interface-implementing)
+         * [Polar order](#polar-order)
+      * [stability](#stability)
+         * [Stability: insertion sort](#stability-insertion-sort)
+         * [Stability: selection sort](#stability-selection-sort)
+         * [Stability: shellsort](#stability-shellsort)
+         * [Stability: mergesort](#stability-mergesort)
+        
 ## Two classic sorting algorithms
 ![](media/14849910002972.jpg)
 

@@ -12,5 +12,6 @@ Steps to develop a usable algorithm:* Model the problem.* Find an algorithm t
 2. [Union−Find](02-Union-Find.md)
 3. [Stacks And Queues](03-StacksAndQueues.md)
 4. [Elementary Sorts](04-ElementarySorts.md)
+5. [Merge Sort](04-Mergesort.md)
 
 
