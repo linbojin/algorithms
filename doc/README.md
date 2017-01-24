@@ -14,4 +14,8 @@ Steps to develop a usable algorithm:* Model the problem.* Find an algorithm t
 4. [Elementary Sorts](04-ElementarySorts.md)
 5. [Merge Sort](05-Mergesort.md)
 
+### Useful Graphs
+#### Sorting methods
+![](media/14852530390979.jpg)
+
 
