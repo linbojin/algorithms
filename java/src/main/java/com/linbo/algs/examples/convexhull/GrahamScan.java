@@ -1,4 +1,4 @@
-package com.linbo.algs.examples;
+package com.linbo.algs.examples.convexhull;
 
 import com.linbo.algs.datatypes.LinkedStack;
 
@@ -71,7 +71,7 @@ public class GrahamScan {
     points[2] = new Point2D(0, 0);
     points[3] = new Point2D(-3, 1);
     points[4] = new Point2D(2, 2);
-    points[5] = new Point2D(-5, 5);
+    points[5] = new Point2D(-4, 5);
     points[6] = new Point2D(2, 4);
     points[7] = new Point2D(1, 3);
 

@@ -1,4 +1,4 @@
-package com.linbo.algs.examples;
+package com.linbo.algs.examples.queues;
 
 import java.util.Iterator;
 

@@ -1,5 +1,6 @@
-package com.linbo.algs.examples;
+package com.linbo.algs.examples.queues;
 
+import com.linbo.algs.examples.queues.RandomizedQueue;
 import edu.princeton.cs.algs4.StdIn;
 import edu.princeton.cs.algs4.StdOut;
 import edu.princeton.cs.algs4.StdRandom;

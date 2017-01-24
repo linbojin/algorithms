@@ -1,4 +1,4 @@
-package com.linbo.algs.examples;
+package com.linbo.algs.examples.percolation;
 
 import com.linbo.algs.util.StdStats;
 
