@@ -129,7 +129,7 @@ Table of Contents
 
 ##  event-driven simulation
 ### Molecular dynamics simulation of hard discs
-[CollisionSystem.java](https://github.com/kevin-wayne/algs4/blob/master/src/main/java/edu/princeton/cs/algs4/CollisionSystem.java)
+[CollisionSystem.java](https://github.com/kevin-wayne/algs4/blob/master/src/main/java/edu/princeton/cs/algs4/CollisionSystem.java)<br>
 ![](media/14852532221790.jpg)
 
 
