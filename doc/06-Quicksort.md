@@ -32,7 +32,7 @@ Table of Contents
 ![](media/14858486968970.jpg)
 
 ## Quicksort
-[Quick.java](../java/src/main/java/com/linbo/algs/examples/Quick.java)<br>
+[Quick.java](../java/src/main/java/com/linbo/algs/sortings/Quick.java)<br>
 ![](media/14858488006458.jpg)<br>
 ![](media/14858488114593.jpg)<br>
 ![](media/14858488209815.jpg)<br>
@@ -62,7 +62,7 @@ Table of Contents
 ### Quicksort properties
 ![](media/14858501722521.jpg)
 
-## Quicksort: practical improvements
+### Quicksort: practical improvements
 [QuickX.java](https://github.com/kevin-wayne/algs4/blob/master/src/main/java/edu/princeton/cs/algs4/QuickX.java)<br>
 ![](media/14858502210451.jpg)<br>
 ![](media/14858502885022.jpg)
@@ -88,7 +88,7 @@ Table of Contents
 ![](media/14858512269427.jpg)
 
 ### 3-way partitioning
-[Quick3way.java](../java/src/main/java/com/linbo/algs/examples/Quick3way.java)<br>
+[Quick3way.java](../java/src/main/java/com/linbo/algs/sortings/Quick3way.java)<br>
 ![](media/14858513073911.jpg)
 
 ### Dijkstra 3-way partitioning demo
