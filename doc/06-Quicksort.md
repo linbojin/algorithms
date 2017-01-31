@@ -11,7 +11,7 @@ Table of Contents
          * [best-case and worst-case analysis](#best-case-and-worst-case-analysis)
          * [Average-case analysis](#average-case-analysis)
          * [Quicksort properties](#quicksort-properties)
-      * [Quicksort: practical improvements](#quicksort-practical-improvements)
+         * [Quicksort: practical improvements](#quicksort-practical-improvements)
       * [Selection](#selection)
          * [Quick-select](#quick-select)
       * [Duplicate keys](#duplicate-keys)
