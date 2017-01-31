@@ -22,7 +22,7 @@ public class MaxPQ<Key> implements Iterable<Key> {
 
 
   public MaxPQ(int initCapacity) {
-    pq = (Key[]) new Object[initCapacity + 1];
+    pq = (Key[]) new Object[initCapacity + 1];   // indices starts at 1
     n = 0;
   }
 
