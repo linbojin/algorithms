@@ -101,7 +101,11 @@ public class Board {
 
   // does this board equal y?
   public boolean equals(Object y) {
-    return this == y;
+    if (y == this) return true;
+    if (y == null) return false;
+    if (y.getClass() != this.getClass()) return false;
+    Board that = (Board) y;
+    return (this.dim == that.dim) && (Arrays.deepEquals(blocks, that.blocks));
   }
 
   // all neighboring boards
@@ -172,15 +176,15 @@ public class Board {
 
   // string representation of this board (in the output format specified below)
   public String toString() {
-    String str = dim + "\n";
+    StringBuilder s = new StringBuilder();
+    s.append(dim + "\n");
     for (int i = 0; i < dim; i++) {
-      String row = " ";
       for (int j = 0; j < dim; j++) {
-        row = row + blocks[i][j] + "  ";
+        s.append(String.format("%2d ", blocks[i][j]));
       }
-      str = str + row + "\n";
+      s.append("\n");
     }
-    return str;
+    return s.toString();
   }
 
   // unit tests (not graded)

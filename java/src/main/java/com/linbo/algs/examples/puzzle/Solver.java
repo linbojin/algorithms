@@ -8,6 +8,9 @@ import edu.princeton.cs.algs4.MinPQ;
  * Created by @linbojin on 25/1/17.
  */
 public class Solver {
+//
+//  private
+//
 //  // find a solution to the initial board (using the A* algorithm)
 //  public Solver(Board initial) {
 //    if (initial == null) throw new java.lang.NullPointerException();
@@ -18,9 +21,7 @@ public class Solver {
 //  public boolean isSolvable()
 //
 //  // min number of moves to solve initial board; -1 if unsolvable
-//  public int moves() {
-//
-//  }
+//  public int moves() {}
 //
 //  // sequence of boards in a shortest solution; null if unsolvable
 //  public Iterable<Board> solution()
