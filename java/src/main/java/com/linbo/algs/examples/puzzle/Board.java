@@ -1,8 +1,8 @@
 package com.linbo.algs.examples.puzzle;
 
+import edu.princeton.cs.algs4.Queue;
+
 import java.util.Arrays;
-import java.util.Iterator;
-import java.util.Stack;
 
 /**
  * Created by @linbojin on 25/1/17.
@@ -20,7 +20,7 @@ public class Board {
     dim = blocks.length;
     this.blocks = new int[dim][dim];
     for (int i = 0; i < dim; i++) {
-      for (int j =0; j < dim; j++) {
+      for (int j = 0; j < dim; j++) {
         this.blocks[i][j] = blocks[i][j];
         if (blocks[i][j] == 0) {
           blankX = i;
@@ -29,7 +29,6 @@ public class Board {
       }
     }
   }
-
 
   // board dimension n
   public int dimension() {
@@ -110,63 +109,49 @@ public class Board {
 
   // all neighboring boards
   public Iterable<Board> neighbors() {
-    return new Neighbor();
+    return neighborsIterable();
   }
 
-  private class Neighbor implements Iterable<Board> {
-    public Iterator<Board> iterator() {
-      return new NeighborIterator();
+  private Iterable<Board> neighborsIterable() {
+    Queue<Board> queue = new Queue<Board>();
+
+    Queue<Integer> xs = new Queue<Integer>();
+    Queue<Integer> ys = new Queue<Integer>();
+    int x1 = blankX - 1;
+    int x2 = blankX + 1;
+    int y1 = blankY - 1;
+    int y2 = blankY + 1;
+    if (x1 >= 0 && x1 < dim) {
+      xs.enqueue(x1);
+      ys.enqueue(blankY);
+    }
+    if (x2 >= 0 && x2 < dim) {
+      xs.enqueue(x2);
+      ys.enqueue(blankY);
+    }
+    if (y1 >= 0 && y1 < dim) {
+      xs.enqueue(blankX);
+      ys.enqueue(y1);
+    }
+    if (y2 >= 0 && y2 < dim) {
+      xs.enqueue(blankX);
+      ys.enqueue(y2);
     }
 
-    private class NeighborIterator implements Iterator<Board> {
-      private Stack<Integer> xs;
-      private Stack<Integer> ys;
+    int count = xs.size();
 
-      public NeighborIterator() {
-        xs = new Stack<Integer>();
-        ys = new Stack<Integer>();
-
-        int x1 = blankX - 1;
-        int x2 = blankX + 1;
-        int y1 = blankY - 1;
-        int y2 = blankY + 1;
-
-        if (x1 >= 0 && x1 < dim) {
-          xs.push(x1);
-          ys.push(blankY);
-        }
-        if (x2 >= 0 && x2 < dim) {
-          xs.push(x2);
-          ys.push(blankY);
-        }
-        if (y1 >= 0 && y1 < dim) {
-          xs.push(blankX);
-          ys.push(y1);
-        }
-        if (y2 >= 0 && y2 < dim) {
-          xs.push(blankX);
-          ys.push(y2);
-        }
+    for (int k = 0; k < count; k++) {
+      int i = xs.dequeue();
+      int j = ys.dequeue();
+      int[][] copy = new int[dim][dim];
+      for (int m = 0; m < dim; m++) {
+        copy[m] = blocks[m].clone();
       }
-
-      public boolean hasNext() { return xs.size() > 0; }
-
-      public void remove() {
-        throw new UnsupportedOperationException();
-      }
-
-      public Board next() {
-        if (!hasNext()) { throw new java.util.NoSuchElementException(); }
-        int i = xs.pop();
-        int j = ys.pop();
-        int[][] copy = new int[dim][dim];
-        for (int m = 0; m < dim; m++) {
-          copy[m] = blocks[m].clone();
-        }
-        swapWithBlank(copy, i, j);
-        return new Board(copy);
-      }
+      swapWithBlank(copy, i, j);
+      queue.enqueue(new Board(copy));
     }
+
+    return queue;
   }
 
   private void swapWithBlank(int[][] blocks, int i, int j) {
