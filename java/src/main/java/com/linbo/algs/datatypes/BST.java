@@ -28,9 +28,7 @@ public class BST<Key extends Comparable<Key>, Value> {
     }
   }
 
-  public BST() {
-
-  }
+  public BST() { }
 
   public boolean isEmpty() {
     return size() == 0;
@@ -82,7 +80,6 @@ public class BST<Key extends Comparable<Key>, Value> {
   public void deleteMin() {
     if (isEmpty()) throw new java.util.NoSuchElementException("Symbol table underflow");
     root = deleteMin(root);
-
   }
 
   private Node deleteMin(Node x) {
@@ -116,8 +113,8 @@ public class BST<Key extends Comparable<Key>, Value> {
     if (cmp < 0) x.left = delete(x.left, key);
     else if (cmp > 0) x.right = delete(x.right, key);
     else {
-      if (x.right == null) return x.left;
       if (x.left == null) return x.right;
+      if (x.right == null) return x.left;
       Node t = x;
       x = min(t.right);
       x.right = deleteMin(t.right);
@@ -134,7 +131,7 @@ public class BST<Key extends Comparable<Key>, Value> {
 
   private Node min(Node x) {
     if (x.left == null) return x;
-    else                return min(x.left);
+    else return min(x.left);
   }
 
   public Key max() {
@@ -144,7 +141,7 @@ public class BST<Key extends Comparable<Key>, Value> {
 
   private Node max(Node x) {
     if (x.right == null) return x;
-    else                 return max(x.right);
+    else return max(x.right);
   }
 
   public Key floor(Key key) {
@@ -218,17 +215,7 @@ public class BST<Key extends Comparable<Key>, Value> {
     return keysIterable(min(), max());
   }
 
-  /**
-   * Returns all keys in the symbol table in the given range,
-   * as an {@code Iterable}.
-   *
-   * @param  lo minimum endpoint
-   * @param  hi maximum endpoint
-   * @return all keys in the symbol table between {@code lo}
-   *         (inclusive) and {@code hi} (inclusive)
-   * @throws IllegalArgumentException if either {@code lo} or {@code hi}
-   *         is {@code null}
-   */
+  // Returns all keys in the symbol table in the given range.
   public Iterable<Key> keysIterable(Key lo, Key hi) {
     if (lo == null) throw new IllegalArgumentException("first argument to keys() is null");
     if (hi == null) throw new IllegalArgumentException("second argument to keys() is null");
@@ -247,16 +234,6 @@ public class BST<Key extends Comparable<Key>, Value> {
     if (cmphi > 0) keys(x.right, queue, lo, hi);
   }
 
-  /**
-   * Returns the number of keys in the symbol table in the given range.
-   *
-   * @param  lo minimum endpoint
-   * @param  hi maximum endpoint
-   * @return the number of keys in the symbol table between {@code lo}
-   *         (inclusive) and {@code hi} (inclusive)
-   * @throws IllegalArgumentException if either {@code lo} or {@code hi}
-   *         is {@code null}
-   */
   public int size(Key lo, Key hi) {
     if (lo == null) throw new IllegalArgumentException("first argument to size() is null");
     if (hi == null) throw new IllegalArgumentException("second argument to size() is null");
@@ -266,11 +243,8 @@ public class BST<Key extends Comparable<Key>, Value> {
     else              return rank(hi) - rank(lo);
   }
 
-  /**
-   * Returns the height of the BST (for debugging).
-   *
-   * @return the height of the BST (a 1-node tree has height 0)
-   */
+
+  // return the height of the BST (a 1-node tree has height 0)
   public int height() {
     return height(root);
   }
@@ -279,11 +253,7 @@ public class BST<Key extends Comparable<Key>, Value> {
     return 1 + Math.max(height(x.left), height(x.right));
   }
 
-  /**
-   * Returns the keys in the BST in level order (for debugging).
-   *
-   * @return the keys in the BST in level order traversal
-   */
+  // return the keys in the BST in level order traversal
   public Iterable<Key> levelOrder() {
     LinkedQueue<Key> keys = new LinkedQueue<Key>();
     LinkedQueue<Node> queue = new LinkedQueue<Node>();
