@@ -51,7 +51,6 @@ Table of Contents
 
 ## Elementary Implementations
 ### Sequential search in a linked list
-[Merge.java](../java/src/main/java/com/linbo/algs/sortings/Merge.java)<br>
 ![](media/14858695822238.jpg)
 
 ### Binary search in an ordered array

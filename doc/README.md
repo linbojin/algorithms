@@ -16,6 +16,7 @@ Steps to develop a usable algorithm:* Model the problem.* Find an algorithm t
 6. [Quick Sort](06-Quicksort.md)
 7. [Priority Queues](07-PriorityQueues.md)
 8. [Symbol Tables](08-SymbolTables.md)
+9. [Binary Search Tree](09-BinarySearchTree.md)
 
 ### Useful Graphs
 #### Sorting methods
