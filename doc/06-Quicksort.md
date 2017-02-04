@@ -74,6 +74,7 @@ Table of Contents
 ![](media/14858508191488.jpg)
 
 ### Quick-select
+[QuickSelect.java](../java/src/main/java/com/linbo/algs/searchings/QuickSelect.java)<br>
 ![](media/14858508904461.jpg)<br>
 ![](media/14858509589622.jpg)
 
