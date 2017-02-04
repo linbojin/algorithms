@@ -26,7 +26,7 @@ Table of Contents
          * [ST implementations: summary](#st-implementations-summary-2)
          
 ## BSTs
-[BST.java](../java/src/main/java/com/linbo/algs/datatypes/BST.java)<br>
+[BST.java](../java/src/main/java/com/linbo/algs/searchings/BST.java)<br>
 ![](media/14860004429835.jpg)
 
 ![](media/14860005156865.jpg)

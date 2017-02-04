@@ -57,7 +57,7 @@ Table of Contents
 ![](media/14858698957711.jpg)
 
 ### Binary search: Java implementation
-[BinarySearchST.java](../java/src/main/java/com/linbo/algs/datatypes/BinarySearchST.java)<br>
+[BinarySearchST.java](../java/src/main/java/com/linbo/algs/searchings/BinarySearchST.java)<br>
 ![](media/14858699354674.jpg)
 
 ### Binary search: trace of standard indexing client

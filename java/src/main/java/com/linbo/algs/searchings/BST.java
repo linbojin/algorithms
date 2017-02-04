@@ -1,4 +1,6 @@
-package com.linbo.algs.datatypes;
+package com.linbo.algs.searchings;
+
+import com.linbo.algs.datatypes.LinkedQueue;
 
 import java.util.NoSuchElementException;
 
