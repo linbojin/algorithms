@@ -19,6 +19,7 @@ Steps to develop a usable algorithm:* Model the problem.* Find an algorithm t
 9. [Binary Search Tree](09-BinarySearchTree.md)
 10. [Balanced Search Trees](10-BalancedSearchTrees.md)
 11. [Geometric Search Applications based on BSTs](11-GeometricSearch.md)
+12. [Hash Tables](12-HashTables.md)
 
 
 ### Useful Graphs
@@ -27,5 +28,8 @@ Steps to develop a usable algorithm:* Model the problem.* Find an algorithm t
 
 #### Sorting methods
 ![](media/14852530390979.jpg)
+
+#### Symbol Table implementations
+![](media/14863920096051.jpg)
 
 
