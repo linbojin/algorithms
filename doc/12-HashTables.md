@@ -78,6 +78,7 @@ Table of Contents
 ![](media/14863912495865.jpg)
 
 ### Separate chaining ST: Java implementation
+[SeparateChainingHashST.java](../java/src/main/java/com/linbo/algs/searchings/SeparateChainingHashST.java)<br>
 ![](media/14863912724544.jpg)
 
 ![](media/14863913068459.jpg)
@@ -105,6 +106,7 @@ Table of Contents
 ![](media/14863917667256.jpg)
 
 ### Linear probing ST implementation
+[LinearProbingHashST.java](../java/src/main/java/com/linbo/algs/searchings/LinearProbingHashST.java)<br>
 ![](media/14863918053100.jpg)
 
 ### Clustering

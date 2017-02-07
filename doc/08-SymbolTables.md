@@ -51,6 +51,7 @@ Table of Contents
 
 ## Elementary Implementations
 ### Sequential search in a linked list
+[SequentialSearchST.java](../java/src/main/java/com/linbo/algs/searchings/SequentialSearchST.java)<br>
 ![](media/14858695822238.jpg)
 
 ### Binary search in an ordered array
