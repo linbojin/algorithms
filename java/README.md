@@ -22,6 +22,11 @@ Knowledge Graph
 | Stack | [LinkedStack](src/main/java/com/linbo/algs/datatypes/LinkedStack.java) | [ResizingArrayStack](src/main/java/com/linbo/algs/datatypes/ResizingArrayStack.java) |
 | Queue | [LinkedQueue](src/main/java/com/linbo/algs/datatypes/LinkedQueue.java) | [ResizingArrayQueue](src/main/java/com/linbo/algs/datatypes/ResizingArrayQueue.java) |
 
+| Sortings | worst | average | best | remarks | 
+|----------|:-----:|:-------:|:----:|---------|
+| [Insertion](src/main/java/com/linbo/algs/sortings/Insertion.java) | n<sup>2</sup>/2 | n<sup>2</sup>/4 | N | **stable**, for small N or partially ordered |
+| [Shell](src/main/java/com/linbo/algs/sortings/Shell.java) | ? | ? | N | subquatratic |
+
 Project Structure
 
 ```
