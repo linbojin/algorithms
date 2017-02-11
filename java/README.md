@@ -15,6 +15,13 @@ java -cp target/algs-1.0-SNAPSHOT.jar com.linbo.algs.examples.convexhull.GrahamS
 java -cp target/algs-1.0-SNAPSHOT.jar com.linbo.algs.examples.collinear.FastCollinearPoints input6.txt
 ```
 
+Knowledge Graph
+
+|       | LinkedList | Array  | 
+|-------|------------|--------|
+| Stack | [LinkedStack](src/main/java/com/linbo/algs/datatypes/LinkedStack.java) | [ResizingArrayStack](src/main/java/com/linbo/algs/datatypes/ResizingArrayStack.java) |
+| Queue | [LinkedQueue](src/main/java/com/linbo/algs/datatypes/LinkedQueue.java) | [ResizingArrayQueue](src/main/java/com/linbo/algs/datatypes/ResizingArrayQueue.java) |
+
 Project Structure
 
 ```
