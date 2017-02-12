@@ -1,11 +1,10 @@
 package com.linbo.algs.sortings;
 
-import java.util.Comparator;
-
 /**
  * Created by @linbojin on 16/1/17.
  *  This class provides static methods for sorting an
  *  array using mergesort.
+ *  Ref: https://github.com/linbojin/algorithms/blob/master/doc/05-Mergesort.md#mergesort-1
  */
 public class Merge {
 
@@ -50,4 +49,5 @@ public class Merge {
       System.out.print(i + " ");
     }
   }
+
 }

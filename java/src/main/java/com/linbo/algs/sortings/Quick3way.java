@@ -6,6 +6,7 @@ import com.linbo.algs.util.StdRandom;
  * Created by @linbojin on 31/1/17.
  *  This class provides static methods for sorting an
  *  array using quicksort with 3-way partitioning.
+ *  Ref: https://github.com/linbojin/algorithms/blob/master/doc/06-Quicksort.md#3-way-partitioning
  */
 public class Quick3way {
 
@@ -33,16 +34,6 @@ public class Quick3way {
     // a[lo..lt-1] < v = a[lt..gt] < a[gt+1..hi].
     sort(a, lo, lt-1);
     sort(a, gt+1, hi);
-  }
-
-
-  /***************************************************************************
-   *  Helper sorting functions.
-   ***************************************************************************/
-
-  // is v < w ?
-  private static boolean less(Comparable v, Comparable w) {
-    return v.compareTo(w) < 0;
   }
 
   // exchange a[i] and a[j]

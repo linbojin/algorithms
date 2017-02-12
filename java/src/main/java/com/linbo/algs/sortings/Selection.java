@@ -48,7 +48,6 @@ public class Selection {
     a[j] = swap;
   }
 
-
   public static void main(String args[]) {
     Integer[] a = {6,2,1,4};
 
@@ -57,8 +56,6 @@ public class Selection {
     for (int i: a) {
       System.out.print(i + " ");
     }
-
   }
-
 
 }

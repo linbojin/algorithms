@@ -6,12 +6,12 @@ import java.util.Comparator;
  * Created by @linbojin on 15/1/17.
  *  This class provides static methods for sorting an
  *  array using insertion sort.
- *
  *  This implementation makes ~ 1/2 n^2 compares and exchanges in
  *  the worst case, so it is not suitable for sorting large arbitrary arrays.
  *  More precisely, the number of exchanges is exactly equal to the number
  *  of inversions. So, for example, it sorts a partially-sorted array
  *  in linear time.
+ *  Ref: https://github.com/linbojin/algorithms/blob/master/doc/04-ElementarySorts.md#insertion-sort
  */
 public class Insertion {
 
@@ -59,6 +59,6 @@ public class Insertion {
     for (int i: a) {
       System.out.print(i + " ");
     }
-
   }
+
 }

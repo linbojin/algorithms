@@ -4,7 +4,7 @@ package com.linbo.algs.sortings;
  * Created by @linbojin on 21/1/17.
  *  This class provides static methods for sorting an
  *  array using Shellsort with Knuth's increment sequence (1, 4, 13, 40, ...).
- *  <p>
+ *  Ref: https://github.com/linbojin/algorithms/blob/master/doc/04-ElementarySorts.md#shell-sort
  */
 public class Shell {
 
@@ -47,4 +47,5 @@ public class Shell {
       System.out.print(i + " ");
     }
   }
+
 }

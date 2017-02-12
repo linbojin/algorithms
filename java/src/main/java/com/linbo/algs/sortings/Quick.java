@@ -4,6 +4,7 @@ import com.linbo.algs.util.StdRandom;
 
 /**
  * Created by @linbojin on 21/1/17.
+ * Ref: https://github.com/linbojin/algorithms/blob/master/doc/06-Quicksort.md#quicksort-1
  */
 public class Quick {
 

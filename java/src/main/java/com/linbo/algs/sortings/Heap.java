@@ -4,11 +4,11 @@ package com.linbo.algs.sortings;
  * Created by @linbojin on 24/1/17.
  *  This class provides a static methods for heapsorting
  *  an array.
+ *  Ref: https://github.com/linbojin/algorithms/blob/master/doc/07-PriorityQueues.md#heapsort
  */
 public class Heap {
 
-  private Heap() {
-  }
+  private Heap() { }
 
 
   public static void sort(Comparable[] pq) {

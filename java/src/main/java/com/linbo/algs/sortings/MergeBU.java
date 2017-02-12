@@ -40,7 +40,6 @@ public class MergeBU {
     return v.compareTo(w) < 0;
   }
 
-
   public static void main(String args[]) {
     Integer[] a = {6,11, 7, 12, 5, 4, 2,1,4};
 
@@ -50,4 +49,5 @@ public class MergeBU {
       System.out.print(i + " ");
     }
   }
+
 }
