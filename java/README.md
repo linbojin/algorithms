@@ -15,6 +15,22 @@ java -cp target/algs-1.0-SNAPSHOT.jar com.linbo.algs.examples.convexhull.GrahamS
 java -cp target/algs-1.0-SNAPSHOT.jar com.linbo.algs.examples.collinear.FastCollinearPoints input6.txt
 ```
 
+Knowledge Graph
+
+|       | LinkedList | Array  | 
+|-------|------------|--------|
+| Stack | [LinkedStack](src/main/java/com/linbo/algs/datatypes/LinkedStack.java) | [ResizingArrayStack](src/main/java/com/linbo/algs/datatypes/ResizingArrayStack.java) |
+| Queue | [LinkedQueue](src/main/java/com/linbo/algs/datatypes/LinkedQueue.java) | [ResizingArrayQueue](src/main/java/com/linbo/algs/datatypes/ResizingArrayQueue.java) |
+
+| Sortings | worst | average | best | remarks | 
+|----------|:-----:|:-------:|:----:|---------|
+| [Insertion](src/main/java/com/linbo/algs/sortings/Insertion.java) | n<sup>2</sup>/2 | n<sup>2</sup>/4 | N | **stable**, for small N or partially ordered |
+| [Shell](src/main/java/com/linbo/algs/sortings/Shell.java) | ? | ? | N | subquatratic |
+| [Quick](src/main/java/com/linbo/algs/sortings/Quick.java) | n<sup>2</sup>/2 | 2NInN | NlogN | **fastest in practices** |
+| [Quick3way](src/main/java/com/linbo/algs/sortings/Quick3way.java) | n<sup>2</sup>/2 | 2NInN | N | improves quicksort in presence of **duplicated keys** |
+| [Merge](src/main/java/com/linbo/algs/sortings/Merge.java) | NlogN | NlogN | NlogN | **NlogN guarantee, stable** |
+| [Heap](src/main/java/com/linbo/algs/sortings/Heap.java) | 2NlogN | 2NlogN | NlogN | NlogN guarantee, in-place, **Priority Queue** |
+
 Project Structure
 
 ```
