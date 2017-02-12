@@ -10,7 +10,6 @@ public class Heap {
 
   private Heap() { }
 
-
   public static void sort(Comparable[] pq) {
     int n = pq.length;
     for (int k = n / 2; k >= 1; k--)
