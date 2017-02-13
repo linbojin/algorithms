@@ -10,7 +10,6 @@ import java.util.Iterator;
  *  operations, along with methods for peeking at the maximum key,
  *  testing if the priority queue is empty, and iterating through
  *  the keys.
- *
  *  This implementation uses a binary heap.
  *  The insert and delete-the-maximum operations take
  *  logarithmic amortized time.
@@ -19,7 +18,6 @@ public class MinPQ<Key> implements Iterable<Key> {
   private Key[] pq;                    // store items at indices 1 to n
   private int n;                       // number of items on priority queue
   private Comparator<Key> comparator;  // optional Comparator
-
 
   public MinPQ(int initCapacity) {
     pq = (Key[]) new Object[initCapacity + 1];
@@ -96,7 +94,7 @@ public class MinPQ<Key> implements Iterable<Key> {
    ***************************************************************************/
 
   private void swim(int k) {
-    while (k >1 && greater(k/2, k)) {
+    while (k > 1 && greater(k/2, k)) {
       exch(k, k/2);
       k = k/2;
     }
@@ -158,7 +156,6 @@ public class MinPQ<Key> implements Iterable<Key> {
       if (!hasNext()) throw new java.util.NoSuchElementException();
       return copy.delMin();
     }
-
   }
 
   public static void main(String args[]) {
@@ -180,4 +177,5 @@ public class MinPQ<Key> implements Iterable<Key> {
     System.out.println(pq.delMin());   // 5
     System.out.println(pq.delMin());   // 22
   }
+
 }
