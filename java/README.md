@@ -17,10 +17,11 @@ java -cp target/algs-1.0-SNAPSHOT.jar com.linbo.algs.examples.collinear.FastColl
 
 Knowledge Graph
 
-|       | LinkedList | Array  | 
-|-------|------------|--------|
-| Stack | [LinkedStack](src/main/java/com/linbo/algs/datatypes/LinkedStack.java) | [ResizingArrayStack](src/main/java/com/linbo/algs/datatypes/ResizingArrayStack.java) |
-| Queue | [LinkedQueue](src/main/java/com/linbo/algs/datatypes/LinkedQueue.java) | [ResizingArrayQueue](src/main/java/com/linbo/algs/datatypes/ResizingArrayQueue.java) |
+| Datatypes      | LinkedList | Array  | 
+|----------------|------------|--------|
+| Stack          | [LinkedStack](src/main/java/com/linbo/algs/datatypes/LinkedStack.java) | [ResizingArrayStack](src/main/java/com/linbo/algs/datatypes/ResizingArrayStack.java) |
+| Queue          | [LinkedQueue](src/main/java/com/linbo/algs/datatypes/LinkedQueue.java) | [ResizingArrayQueue](src/main/java/com/linbo/algs/datatypes/ResizingArrayQueue.java) |
+| Priority Queue | | [MaxPQ](src/main/java/com/linbo/algs/datatypes/MaxPQ.java) |
 
 | Sortings | worst | average | best | remarks | 
 |----------|:-----:|:-------:|:----:|---------|
